@@ -34,3 +34,4 @@ Todo
 * Need to create namespace
 * Need to install devise 
 * Need to create routes for endpoints
+* Need to update trello
