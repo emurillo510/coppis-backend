@@ -37,3 +37,4 @@ Todo
 * Need to update trello
 * Need to add factory girls
 * Need to add rspec
+* Focus!
