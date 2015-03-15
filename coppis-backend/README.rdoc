@@ -35,3 +35,5 @@ Todo
 * Need to install devise 
 * Need to create routes for endpoints
 * Need to update trello
+* Need to add factory girls
+* Need to add rspec
