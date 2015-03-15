@@ -38,3 +38,4 @@ Todo
 * Need to add factory girls
 * Need to add rspec
 * Focus!
+* Create test cases
