@@ -32,6 +32,9 @@ gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Active Model Serializers(ASM) - Making it easy to serialize models for client-side use
+gem 'active_model_serializers', '~> 0.9.3'
+
 # Devise - Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 3.4.1'
 
