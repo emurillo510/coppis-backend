@@ -54,6 +54,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
+  # Adds 'api' and 'v1' namespace.
   namespace :api do
     namespace :v1 do
 
