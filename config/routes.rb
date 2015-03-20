@@ -63,6 +63,8 @@ Rails.application.routes.draw do
 
 	  resources :brands
 
+	  resources :users
+
 	end
       end
 
