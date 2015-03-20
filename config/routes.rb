@@ -55,9 +55,13 @@ Rails.application.routes.draw do
   #   end
 
       namespace :api do
-	    namespace :v1 do
+        namespace :v1 do
 
-	    end
+          resources :posts do
+	    resources :comments
+	  end
+
+	end
       end
 
 end
