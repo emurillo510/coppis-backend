@@ -28,3 +28,17 @@ Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 
 == Todo List
+
+I am creating models right now.
+
+It's written on paper....
+
+I need to figure out what to index....
+
+I need to figure out what fields the models need...
+
+I need to create the code for these models...
+
+What validations need to happen...?
+
+What associations need to happen?
