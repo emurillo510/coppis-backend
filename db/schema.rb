@@ -17,8 +17,16 @@ ActiveRecord::Schema.define(version: 20150320013433) do
   enable_extension "plpgsql"
 
   create_table "posts", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "title"
+    t.string   "brand_name"
+    t.string   "user_name"
+    t.text     "description"
+    t.text     "comment"
+    t.integer  "upvotes_count",  default: 0
+    t.integer  "comments_count"
+    t.boolean  "is_public",      default: false
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
   end
 
   create_table "users", force: :cascade do |t|
