@@ -38,6 +38,9 @@ gem 'active_model_serializers', '~> 0.9.3'
 # Devise - Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 3.4.1'
 
+# A modern web server and application server for Ruby, Python and Node.js, optimized for performance, low memory usage and ease of use.
+  gem 'passenger', '~> 5.0.4'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
