@@ -1,0 +1,35 @@
+* {
+	border-radius: 0 !important;
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+}
+
+body{
+	padding-top: 70px;
+}
+
+#myNavmenu{
+	padding-top: 50px;
+	text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navbar-right {
+	float: right;
+}
+
+.footer{
+   position: fixed;
+   bottom: 30px;
+   right: 20px;
+}
