@@ -60,8 +60,9 @@ Rails.application.routes.draw do
 	get 'recent'
 	get 'trending'
         resources :brands
-        resources :comments
-        resources :posts
+        resources :posts do
+           resources :comments
+	end
      end
   end 
 
