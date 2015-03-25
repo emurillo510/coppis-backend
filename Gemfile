@@ -55,6 +55,10 @@ group :development, :test do
   # Factory Girl - factory_girl provides a framework and DSL for defining and using factories - less error-prone, more explicit, and all-around easier to work with than fixtures.
   gem 'factory_girl', '~> 4.5.0'
 
+# Shoulda-matchers -  Making tests easy on the fingers and eyes
+  gem 'shoulda-matchers', '~> 2.8.0'
+
+
 end
 
 group :test, :production do
