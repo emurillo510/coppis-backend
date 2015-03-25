@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  resources :brands
-  resources :comments
-  resources :posts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -56,4 +53,21 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  
+  namespace :api do
+     namespace :v1 do
+        get 'index'
+	get 'recent'
+	get 'trending'
+        resources :brands
+        resources :comments
+        resources :posts
+     end
+  end 
+
+  devise_for :users
+  devise_scope :user do
+     get "sign_in", to: "devise/sessions#new"
+     get "sign_out", to: "devise/sessions#destroy"
+  end
 end
