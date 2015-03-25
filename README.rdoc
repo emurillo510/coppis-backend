@@ -1,4 +1,4 @@
-== README
+== Coppis README
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
@@ -27,18 +27,15 @@ Things you may want to cover:
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 
-== Todo List
+Todo 
+--------
 
-I am creating models right now.
-
-It's written on paper....
-
-I need to figure out what to index....
-
-I need to figure out what fields the models need...
-
-I need to create the code for these models...
-
-What validations need to happen...?
-
-What associations need to happen?
+* Need to create models for backend
+* Need to create namespace
+* Need to install devise 
+* Need to create routes for endpoints
+* Need to update trello
+* Need to add factory girls
+* Need to add rspec
+* Focus!
+* Create test cases
