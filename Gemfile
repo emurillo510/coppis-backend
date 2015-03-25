@@ -34,7 +34,7 @@ gem 'coffee-rails', '~> 4.1.0'
 #
 
 # Active model serializer (ASM) - Making it easy to serialize models for client-side use
-gem 'active_model_serializers', '~> 0.9.3'
+gem 'active_model_serializers', '~> 0.8.3'
 
 # devise - Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 3.4.1'
