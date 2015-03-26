@@ -56,6 +56,14 @@ Rails.application.routes.draw do
   
   namespace :api do
      namespace :v1 do
+        namespace :admin do
+           devise_for :users
+           devise_scope :user do
+              get "sign_in", to: "devise/sessions#new"
+              get "sign_out", to: "devise/sessions#destroy"
+           end
+	end
+
         get 'index'
 	get 'recent'
 	get 'trending'
@@ -66,9 +74,4 @@ Rails.application.routes.draw do
      end
   end 
 
-  devise_for :users
-  devise_scope :user do
-     get "sign_in", to: "devise/sessions#new"
-     get "sign_out", to: "devise/sessions#destroy"
-  end
 end
