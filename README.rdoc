@@ -26,3 +26,17 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+
+
+# TODO
+* Create Factory information.
+* Create fields for data model.
+* Generate BDD test cases for application.
+* Create json format inside serializer.
+* Figure out which objects to cache.
+* Figure out which fields need validation.
+
+# Optional
+* Create mailer on specific actions.
+* Hosting static assets third party.

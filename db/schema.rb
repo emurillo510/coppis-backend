@@ -17,32 +17,29 @@ ActiveRecord::Schema.define(version: 20150325072923) do
   enable_extension "plpgsql"
 
   create_table "brands", force: :cascade do |t|
-    t.string "name"
-    t.string "location"
-    t.string "website"
-    t.text "description"
-    t.string "logo_img"    
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "comments", force: :cascade do |t|
-    t.text "content"
+    t.text     "context"
+    t.integer  "users_id"
+    t.integer  "posts_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "posts", force: :cascade do |t|
-    t.string "title"
-    t.string "brand_name"
-    t.string "user_name"
-    t.text "description"
-    t.integer "upvote_count"
-    t.integer "downvote_count"
-    t.integer "comment_count"
-    t.boolean "is_public"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "title"
+    t.string   "brand_name"
+    t.string   "user_name"
+    t.text     "description"
+    t.integer  "upvote_count"
+    t.integer  "downvote_count"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.boolean  "is_public"
+    t.integer  "user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -56,8 +53,6 @@ ActiveRecord::Schema.define(version: 20150325072923) do
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
-    t.boolean "allow_post"
-    t.string "occupation"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
