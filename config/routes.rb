@@ -54,7 +54,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   
-  namespace :api do
+  namespace :api, defaults: { format: :json }, constraints: { subdomain: 'api' }, path: '/'  do
      namespace :v1 do
         namespace :admin do
            devise_for :users
