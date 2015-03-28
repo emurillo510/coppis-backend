@@ -1,4 +1,4 @@
-class BrandsController < ApplicationController
+class Api::V1::BrandsController < ApplicationController
   before_action :set_brand, only: [:show, :edit, :update, :destroy]
 
   # GET /brands

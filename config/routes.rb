@@ -55,23 +55,23 @@ Rails.application.routes.draw do
   #   end
   
   namespace :api, defaults: { format: :json }, constraints: { subdomain: 'api' }, path: '/'  do
-     namespace :v1 do
+
+    scope module: :v1, path: '/v1/' do
         namespace :admin do
            devise_for :users
            devise_scope :user do
               get "sign_in", to: "devise/sessions#new"
               get "sign_out", to: "devise/sessions#destroy"
            end
-	end
+       end
 
-        get 'index'
-	get 'recent'
-	get 'trending'
+          get 'index'
+    	  get 'recent'
+    	  get 'trending'
+        
         resources :brands
-        resources :posts do
-           resources :comments
-	end
-     end
-  end 
-
+        resources :posts
+        resources :comments
+    end 
+   end
 end
