@@ -58,6 +58,9 @@ group :development, :test do
 # Shoulda-matchers -  Making tests easy on the fingers and eyes
   gem 'shoulda-matchers', '~> 2.8.0'
 
+# FFaker - Faster Faker, generates dummy data.
+  gem 'ffaker', '~> 2.0.0'
+
 
 end
 

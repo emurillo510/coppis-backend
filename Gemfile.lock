@@ -69,6 +69,7 @@ GEM
     factory_girl_rails (4.5.0)
       factory_girl (~> 4.5.0)
       railties (>= 3.0.0)
+    ffaker (2.0.0)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
     hike (1.2.3)
@@ -180,6 +181,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise (~> 3.4.1)
   factory_girl_rails (~> 4.5.0)
+  ffaker (~> 2.0.0)
   passenger (~> 5.0.5)
   pg
   rails (= 4.2.1)
