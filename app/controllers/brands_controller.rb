@@ -10,6 +10,10 @@ class BrandsController < ApplicationController
   # GET /brands/1
   # GET /brands/1.json
   def show
+     respond_to do |format|
+        format.html
+        format.json { render json: @brand }
+    end
   end
 
   # GET /brands/new
