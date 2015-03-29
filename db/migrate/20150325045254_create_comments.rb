@@ -2,7 +2,7 @@ class CreateComments < ActiveRecord::Migration
   def change
     create_table :comments do |t|
 
-      t.text :context
+      t.text :content
 
       t.references :users
       t.references :posts
