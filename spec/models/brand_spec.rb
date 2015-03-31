@@ -1,5 +1,17 @@
 require 'rails_helper'
 
 RSpec.describe Brand, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  before { @brand = FactoryGirl.build(:brand) }
+
+  subject { @brand } 
+
+  describe 'Instantiation of brand' do
+
+    before { @brand.name = "Nike" }
+
+    it { should be_valid }
+
+  end
+
 end
