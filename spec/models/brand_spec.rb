@@ -2,6 +2,12 @@ require 'rails_helper'
 
 RSpec.describe Brand, type: :model do
 
+# describe brand
+
+# context empty
+
+# context has brand
+
   before { @brand = FactoryGirl.build(:brand) }
 
   subject { @brand } 
