@@ -3,6 +3,13 @@
 Coppis is a platform for urban fashion. This website allows users to discover new and trending brands within the domain of urban fashion. This project was started because the co-founders wanted a tool where they could find out the latest and trending brands people were wearing. 
 
 
+== Technologies Used
+
+We used several tools to produce this api. We used devise for authentication and authorization via HTTP digest. We used active model serializer to structure the json format from the database to the front-end client. For testing we went with several tools: rspec, factory girls, shouda-matchers, and ffaker. These tools allowed us to generate test cases using techniques such as BDD, and generate mock data using factory girls and ffaker. 
+
+For our data storage we went with Postgres. Postgres has a history of originating from UC Berkeley and also has a great track record of battle proven performance. It has a great community and support team.
+
+
 # TODO
 * Create Factory information.
 * Create fields for data model.
