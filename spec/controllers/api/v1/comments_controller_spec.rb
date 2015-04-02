@@ -2,20 +2,55 @@ require 'rails_helper'
 
 RSpec.describe Api::V1::CommentsController, type: :controller do
 
-#set-up
+let!(:comment) { build(:comment) }
 
-#context1 index
- 
-#context2 new 
+	describe 'Comment #index' do
+	    
+		it 'Return json object' do
+	      
+	    end
+	end
 
-#context3 create
+	describe 'Comment #new' do
 
-#context4 show
+		it 'Should create a new comment' do
+	      
+	    end
+	end
+	 
+	describe 'Comment #create' do
 
-#context5 edit
- 
-#context6 update
+		it 'Should create a new comment' do
+	      
+	    end
+	end
 
-#context7 destroy
+	describe 'Comment #show' do
+		
+		it 'Should one comment in json form' do
+	      
+	    end
+	end
+
+	describe 'Comment #edit' do
+		
+		it 'Should edit one Comment' do
+	      
+	    end
+	end 
+
+	describe 'Comment #update' do
+		
+		it 'Should update one comment' do
+	      
+	    end
+	end
+
+	describe 'Comment #show' do
+		
+		it 'Should one comment in json form' do
+	      
+	    end
+	end
 
 end

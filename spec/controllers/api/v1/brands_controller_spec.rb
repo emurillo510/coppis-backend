@@ -2,20 +2,54 @@ require 'rails_helper'
 
 RSpec.describe Api::V1::BrandsController, type: :controller do
 
-#set-up
+	let!(:brand) { build(:brand) }
 
-#context1 index
- 
-#context2 new 
+	describe 'Brand #index' do
+	    
+		it 'Return json object' do
+	      
+	    end
+	end
 
-#context3 create
+	describe 'Brand #new' do
 
-#context4 show
+		it 'Should create a new brand' do
+	      
+	    end
+	end
+	 
+	describe 'Brand #create' do
 
-#context5 edit
- 
-#context6 update
+		it 'Should create a new brand' do
+	      
+	    end
+	end
 
-#context7 destroy
+	describe 'Brand #show' do
+		
+		it 'Should one brand in json form' do
+	      
+	    end
+	end
 
+	describe 'Brand #edit' do
+		
+		it 'Should edit one brand' do
+	      
+	    end
+	end 
+
+	describe 'Brand #update' do
+		
+		it 'Should update one brand' do
+	      
+	    end
+	end
+
+	describe 'Brand #show' do
+		
+		it 'Should one brand in json form' do
+	      
+	    end
+	end
 end

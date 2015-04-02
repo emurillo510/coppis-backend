@@ -2,20 +2,54 @@ require 'rails_helper'
 
 RSpec.describe Api::V1::PostsController, type: :controller do
 
-#set-up
+	let!(:post) { build(:post) }
 
-#context1 index
- 
-#context2 new 
+	describe 'Post #index' do
+	    
+		it 'Return json object' do
+	      
+	    end
+	end
 
-#context3 create
+	describe 'Post #new' do
 
-#context4 show
+		it 'Should create a new post' do
+	      
+	    end
+	end
+	 
+	describe 'Post #create' do
 
-#context5 edit
- 
-#context6 update
+		it 'Should create a new post' do
+	      
+	    end
+	end
 
-#context7 destroy
+	describe 'Post #show' do
+		
+		it 'Should one post in json form' do
+	      
+	    end
+	end
 
+	describe 'Post #edit' do
+		
+		it 'Should edit one post' do
+	      
+	    end
+	end 
+
+	describe 'Post #update' do
+		
+		it 'Should update one post' do
+	      
+	    end
+	end
+
+	describe 'Post #show' do
+		
+		it 'Should one post in json form' do
+	      
+	    end
+	end
 end
