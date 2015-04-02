@@ -15,9 +15,7 @@ class Api::V1::PostsController < ApplicationController
 
   # GET /posts/1
   # GET /posts/1.json
-  def show
-
- 
+  def show 
      respond_to do |format|
         format.html
         format.json { render json: @post }
